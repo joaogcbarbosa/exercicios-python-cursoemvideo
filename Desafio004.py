@@ -1,3 +1,4 @@
+#Faça um programa que leia algo pelo teclado e mostre na tela o seu tipo primitivo e todas informações possíveis sobre ele
 a = input('Digite algo: ')
 print(f'O tipo primitivo do valor digitado é {type(a)}')
 print(f'É apenas maiúscula? {a.isupper()}')
