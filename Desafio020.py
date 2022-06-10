@@ -1,5 +1,4 @@
-#O mesmo professor do desafio anterior quer sortear a ordem de apresentação dos alunos. Faça um programa que leia o nome
-#dos quatro alunos e mostre a ordem sorteada.
+#O mesmo professor do desafio anterior quer sortear a ordem de apresentação dos alunos. Faça um programa que leia o nome dos quatro alunos e mostre a ordem sorteada.
 from random import shuffle
 from time import sleep
 a1 = str(input('Primeiro aluno: '))

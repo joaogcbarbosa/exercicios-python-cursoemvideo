@@ -1,5 +1,4 @@
-#Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome
-#deles e escrevendo o nome do escolhido.
+#Um professor quer sortear um dos seus quatro alunos para apagar o quadro. Faça um programa que ajude ele, lendo o nome deles e escrevendo o nome do escolhido.
 from random import choice
 from time import sleep
 a1 = str(input('Primeiro aluno: ')).strip().upper()
