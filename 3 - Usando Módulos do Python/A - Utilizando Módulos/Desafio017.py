@@ -4,7 +4,7 @@ from math import hypot
 from time import sleep
 print('Cálculo de Hipotenusa')
 sleep(1)
-catOp = float(input('Cateto Oposto: '))
-catAd = float(input('Cateto Adjacente: '))
-hip = hypot(catAd, catOp)
+cat_op = float(input('Cateto Oposto: '))
+cat_ad = float(input('Cateto Adjacente: '))
+hip = hypot(cat_ad, cat_op)
 print(f'A hipotenusa vale {hip:.2f}.')

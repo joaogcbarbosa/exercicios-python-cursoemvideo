@@ -1,15 +1,15 @@
 #Crie um programa onde uma usuário digita uma expressão qualquer que use parênteses. Seu aplicativo deverá analisar se a expressão passada está com os parênteses abertos e fechados na ordem correta.
-"""rightP = leftP = 0
+right_p = left_p = 0
 exp = str(input('Digite uma expressão matemática: '))
-expList = exp.split()
-for conta in expList:
+exp_list = exp.split()
+for conta in exp_list:
     for element in conta:
-        leftP += element.count('(')
-        rightP += element.count(')')
-if leftP == rightP:
+        left_p += element.count('(')
+        right_p += element.count(')')
+if left_p == right_p:
     print('Expressão matemática válida!')
 else:
-    print('Expressão com erro nos parênteses.')""" #Com essa resolução, expressões como "(a*b)-)c(=12" estariam corretas.
+    print('Expressão com erro nos parênteses.') #Com essa resolução, expressões como "(a*b)-)c(=12" estariam corretas.
 
 #Resolução certa:
 

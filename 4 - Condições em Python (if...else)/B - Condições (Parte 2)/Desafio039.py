@@ -4,13 +4,13 @@
 #Se já passou do tempo de alistamento.
 #O programa também deve mostrar quanto falta para o prazo ou quanto passou.
 from datetime import date
-anoAtual = date.today().year
-anoNasc = int(input('Digite seu ano de nascimento: '))
-idade = anoAtual - anoNasc
-anoAlistamento = anoNasc + 18
+ano_atual = date.today().year
+ano_nasc = int(input('Digite seu ano de nascimento: '))
+idade = ano_atual - ano_nasc
+ano_alist = ano_nasc + 18
 if idade == 18:
     print('Você está com 18 anos, deve se alistar.')
 elif idade > 18:
-    print('Você deveria ter se alistado há {} anos.'.format(anoAtual-anoAlistamento))
+    print('Você deveria ter se alistado há {} anos.'.format(ano_atual-ano_alist))
 elif idade < 18:
-    print('Ainda faltam {} anos para seu alistamento.'.format(anoAlistamento-anoAtual))
+    print('Ainda faltam {} anos para seu alistamento.'.format(ano_alist-ano_atual))

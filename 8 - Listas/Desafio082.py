@@ -1,16 +1,16 @@
 #Crie um programa que vai ler vários números e colocar em uma lista. Depois disso, crie duas listas extras que vão conter apenas os valores pares e ímpares digitados, respectivamente. Ao final, mostre o conteúdo das três listas geradas.
 
 lista = []
-listaPar = []
-listaImpar = []
+lsita_par = []
+lista_imp = []
 c = 0
 
 while True:
     lista.append(int(input('Digite um número: ')))
     if lista[c] % 2 == 0:
-        listaPar.append(lista[c])
+        lsita_par.append(lista[c])
     else:
-        listaImpar.append(lista[c])
+        lista_imp.append(lista[c])
     c += 1
     escolha = str(input('Deseja continuar [S/N]? ')).strip().upper()[0]
     while escolha not in 'SN':
@@ -19,5 +19,5 @@ while True:
         break
 
 print(f'Lista completa: {lista}')
-print(f'Lista de números pares: {listaPar}')
-print(f'Lista de números ímpares: {listaImpar}')
+print(f'Lista de números pares: {lsita_par}')
+print(f'Lista de números ímpares: {lista_imp}')
