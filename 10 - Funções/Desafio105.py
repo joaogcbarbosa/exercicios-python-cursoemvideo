@@ -1,6 +1,12 @@
 #Faça um programa que tenha uma função notas() que pode receber várias notas de alunos e vai retornar um dicionário com as seguintes informações: -quantidade de notas; -a maior nota; -a menor nota; -a média da turma; -a situação. Adicione também as docstrings da função.
 
 def notas(*n, sit=False):
+    """
+    -> Função para analisar quantidade de notas, maior nota, menor nota, média e situação de uma turma.
+    :param "n": notas;
+    :param "sit": valor opcional, informa ou não a situação da turma;
+    :return: dicionário com informações sobre a turma.
+    """
     inf = dict()
 
     inf['Total de notas'] = len(n)
@@ -21,3 +27,4 @@ def notas(*n, sit=False):
 
 resp = notas(6.5, 9.0, 7.5, sit=True)
 print(resp)
+help(notas)
