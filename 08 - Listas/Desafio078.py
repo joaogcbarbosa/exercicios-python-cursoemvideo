@@ -47,3 +47,23 @@ for c in range(0, 5):
         print(f'{maior} encontrado na posição {c + 1}')
     if valores[c] == menor:
         print(f'{menor} encontrado na posição {c + 1}')
+
+# Utilizando list-comprehension:
+
+valores = [int(input(f'{c + 1}º número: ')) for c in range(5)]
+
+print()
+
+maior = max(valores)
+menor = min(valores)
+
+print(f'O maior número é {maior}')
+print(f'O menor número é {menor}')
+
+print()
+
+for c in range(5):
+    if valores[c] == maior:
+        print(f'{maior} encontrado na posição {c + 1}')
+    elif valores[c] == menor:
+        print(f'{menor} encontrado na posição {c + 1}')
