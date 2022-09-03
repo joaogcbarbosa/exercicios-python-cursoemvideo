@@ -1,11 +1,9 @@
 #Crie um programa que crie uma matriz de dimensão 3x3 e preencha com valores lidos pelo teclado.
 
 mat = []
-aux = []
 
 for i in range(1, 4):
-    for j in range(1, 4):
-        aux.append(int(input(f'Valor {i}x{j}: ')))
+    aux = [int(input(f'Valor {i}x{j}: ')) for j in range(1, 4)]
     mat.append(aux[:])
     aux.clear()
 
